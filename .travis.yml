@@ -9,5 +9,5 @@ before_install:
 
 
 script: 
-  - docker run alirezazekvat\docker-react run npm test
+  - docker run alirezazekvat\docker-react  npm run test
   
