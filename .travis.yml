@@ -1,13 +1,13 @@
 sudo: required
 
- service:
+service:
   - docker
 #this is a comment
 
-  before_install:
-   - docker build -t alirezazekavat\docker-react -f Dockerfile.dev .
+before_install:
+  - docker build -t alirezazekavat\docker-react -f Dockerfile.dev .
 
 
-  script: 
-   - docker run alirezazekavat\docker-react run npm test -- -- coverage 
-   
+script: 
+  - docker run alirezazekavat\docker-react run npm test -- -- coverage 
+  
