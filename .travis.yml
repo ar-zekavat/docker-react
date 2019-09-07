@@ -8,6 +8,6 @@ before_install:
   - docker build -t alirezazekvat\docker-react -f Dockerfile.dev .
 
 
-script: 
-  - docker run alirezazekvat\docker-react  npm run test -- --coverage
+script:
+  - docker run alirezazekvat\docker-react npm run test -- --coverage
   
